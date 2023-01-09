@@ -1,3 +1,4 @@
+import CountProvider from "../context/context";
 import "./globals.css";
 
 export default function RootLayout({
@@ -8,7 +9,9 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head />
-      <body>{children}</body>
+      <body>
+        <CountProvider>{children}</CountProvider>
+      </body>
     </html>
   );
 }
